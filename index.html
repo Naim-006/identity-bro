@@ -14,8 +14,8 @@
 
         body {
             font-family: 'Arial', sans-serif;
-            background: white;
-            color: black;
+            background:rgb(255, 255, 255);
+            color: #3c476c;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -43,19 +43,21 @@
         .documents {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 20px;
-            width: 85%;
+            gap: 30px;
+            width: 80%;
             max-width: 1200px;
         }
 
         .document-card {
-            background: rgba(255, 255, 255, 0.1);
-            border-radius: 10px;
-            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+            background: rgb(70, 70, 129);
+            border-radius: 15px;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.702);
             overflow: hidden;
             text-align: center;
             transition: transform 0.3s, box-shadow 0.3s;
             margin-top: 10px;
+            color: white;
+            padding-bottom: 10px;
         }
 
         .document-card:hover {
@@ -76,11 +78,12 @@
         .document-card a {
             display: inline-block;
             margin: 10px;
-            padding: 10px 20px;
+            padding: 10px 15px;
             color: #ffffff;
-            background: #ff5722;
+            background: #00000080;
             text-decoration: none;
-            border-radius: 5px;
+            border-radius: 20px;
+            border: 1px solid #ffffff;
             transition: background 0.3s;
         }
 
@@ -93,13 +96,16 @@
             margin: 30px 0 10px;
             text-align: center;
             width: 100%;
-            border-bottom: 2px solid rgba(255, 255, 255, 0.5);
-            padding-bottom: 5px;
+            background: repeating-linear-gradient(to right, #ccccff, #c4ffc4, #ffffaf);
+            border-bottom: 2px solid rgb(65, 62, 101);
+            padding: 5px;
         }
 
         footer {
             margin-top: 30px;
             font-size: 0.9rem;
+            width: 108%;
+            
         }
 
         @keyframes fadeIn {
@@ -116,15 +122,23 @@
 </head>
 <body>
     <header>
-        <h3>Identity & Documents</h3>
-        <p>Access and download your important files at any time.</p>
-        <div class="document-card">
-            <img src="naim-img.jpg.jpg" alt="Document Preview">
-            <h3>Naim Hossain</h3>
-            <p><b>Gender:</b>Male <br><b>Blood:</b>A(+ve)<br><b>Birth :</b>11 Feb 2006 <br>.</p>
-          </div>
-    </header>
-
+        <h3 style="text-transform: uppercase;">Identity & Documents</h3>
+        <p>Access and download your important files at any time.</p><br>
+        <div class="document-card" style="background-color: transparent; width: 200px; height: 200px; display: inline-block; vertical-align: top; margin-right: 10px; box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);">
+            <img src="naim-img.jpg.jpg" alt="Document Preview" style="width: 200px; height: 200px;">
+        </div>
+        <div class="document-card" style="width: 200px; height: 200px; display: inline-block; vertical-align: top; background: none;  align-content: center; box-shadow: 0 8px 15px rgba(0, 0, 0, 0);">
+            <h3 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: #3c476c;">Naim Hossain</h3>
+            <p style="margin-top: 10px; line-height: 20px; text-transform: uppercase; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: #3c476c;">
+                <b>Gender:</b> Male<br>
+                <b>Blood grp:</b> A(+ve)<br>
+                <b>Birth:</b> 11 Feb 2006<br>
+            </p>
+        </div>
+        
+        </header><br><br>
+  <hr style="color: #3c476c; width: 100%;">
+  <br><br>
     <div class="documents">
         <div class="section-title">Professional</div>
         <div class="document-card">
@@ -249,8 +263,25 @@
         </div>
     </div>
 
-    <footer>
-        &copy; 2025 My Identity Bro. All rights reserved.
+    <footer style="background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://img.freepik.com/premium-vector/abstract-technology-digital-link_36402-14.jpg?semt=ais_hybrid'); background-size: cover; background-position: center; padding: 40px 20px; color: white; text-align: center; width: 108%; box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.5);">
+        <div style="max-width: 1200px; margin: 0 auto;">
+            <h2 style="margin-bottom: 10px; font-family: 'Segoe UI', Tahoma, Geneva, sans-serif; text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);">© 2025 My Identity Bro</h2>
+            <p style="margin: 5px 0 20px; font-size: 16px; text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);">All rights reserved.</p>
+    
+            <h3 style="font-size: 18px; margin-bottom: 15px; text-transform: uppercase; font-family: 'Segoe UI', Tahoma, Geneva, sans-serif; text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);">Important Links</h3>
+            <ul style="list-style: none; padding: 0; margin: 0; font-size: 16px; line-height: 2;">
+                <li style="margin-bottom: 10px;">
+                    <span style="color: yellow; font-weight: bold; text-transform: uppercase;">See My Professional Info ▶</span>
+                    <a href="https://broinfo.netlify.app/" style="color: cyan; text-decoration: none;">https://broinfo.netlify.app/</a>
+                </li>
+                <li>
+                    <span style="color: yellow; font-weight: bold; text-transform: uppercase;">My Business Profile and Portfolio ▶</span>
+                    <a href="https://developerbro.netlify.app/" style="color: cyan; text-decoration: none;">https://developerbro.netlify.app/</a>
+                </li>
+            </ul>
+        </div>
     </footer>
+    
+    
 </body>
 </html>
